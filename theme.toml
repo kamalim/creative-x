@@ -5,7 +5,7 @@ description = "A one page HTML theme for creatives."
 homepage = "github.com/kamalim/creative-x"
 tags = ["creative", "portfolio"]
 features = ["responsive", "portfolio", "substitutable strings", "contact form"]
-min_version = 1.0
+min_version = 0.14
 
 [author]
   name = "Kamalim"
