@@ -1,0 +1,10 @@
+{{ "<!-- Privacy -->" | safeHTML }}
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<div class="container text-left">
+<div class="call-to-action">
+<section id="main">
+<h1 id="title">{{ with .Title }}{{ . | markdownify }}{{ end }}</h1>
+  <div>
+    <article id="content">{{ with .Content }}{{ . | markdownify }}{{ end }}</article>
+  </div>
+</section>
