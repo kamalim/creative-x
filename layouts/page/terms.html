@@ -1,0 +1,14 @@
+{{ "<!-- Terms -->" | safeHTML }}
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<div class="container text-center">
+
+<head>
+{{ partial "head.html" . }}
+</head>
+
+<section id="main">
+<h1 class="section-heading" id="title">{{ with .Title }}{{ . | markdownify }}{{ end }}</h1>
+  <div>
+    <article id="content">{{ with .Content }}{{ . | markdownify }}{{ end }}</article>
+  </div>
+</section>
