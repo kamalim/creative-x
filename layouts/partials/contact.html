@@ -53,6 +53,7 @@
                         <div class="col-lg-10 text-left">
                             <div id="success"></div>
                             <button type="submit" class="btn btn-xl">{{ with .Site.Params.contact.buttonText }}{{ . | markdownify }}{{ end }}</button>
+                            <p class="help-block text-danger"><small>{{ with .Site.Params.contact.declaration }}{{ . | markdownify }}{{ end }}</small></p>
                             <input type="hidden" name="_next" value="http://cloudkata.com/thanks/" />
                         </div>
                     </div>
