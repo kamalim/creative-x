@@ -23,7 +23,7 @@ theme = "hugo-creative-theme"
 	description = "Your description"
 
 	# The path must be relative to the static folder
-	favicon = "favicon.ico"
+	# favicon = "favicon.ico"
 
 
 	# Navigation
