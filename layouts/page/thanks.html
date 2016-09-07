@@ -6,7 +6,7 @@
    <section class="bg-light" id="thanks">
     <div class="container text-center">
         <div class="call-to-action">
-            <h2 class="section-heading">{{ with .Site.Params.thanks.headline }}{{ . }}{{ end }}</h2>
+            <h1 class="section-heading">{{ with .Site.Params.thanks.headline }}{{ . }}{{ end }}</h1>
                 <hr class="primary">
                 <p class="text-center">{{ with .Site.Params.thanks.description }}{{ . | markdownify }}{{ end }}</p>
             <a href="/#page-top" class="btn btn-primary btn-xl ">{{ with .Site.Params.thanks.buttontext }}{{ . }}{{ end }}</a>
