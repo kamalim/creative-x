@@ -1,20 +1,16 @@
-{{ "<!-- Terms -->" | safeHTML }}
+{{ "<!-- Privacy -->" | safeHTML }}
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-<div class="container text-center">
-
 <head>
 {{ partial "head.html" . }}
 </head>
-
  <section class="bg-light" id="terms">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2 class="section-heading">{{ with .Title }}{{ . | markdownify }}{{ end }}</h2>
+    <div class="container text-left">
+    	<div class="call-to-action">
+            <h2 class="section-heading text-center">{{ with .Title }}{{ . | markdownify }}{{ end }}</h2>
                 <hr class="primary">
-                <p class="text-center">{{ with .Content }}{{ . | markdownify }}{{ end }}</p>
+                <p class="text-left">{{ with .Content }}{{ . | markdownify }}{{ end }}</p>
             <a href="/#page-top" class="btn btn-primary btn-xl ">{{ with .LinkTitle }}{{ . | markdownify }}{{ end }}</a>
         </div>
     </div>
 </section>
-
 </html>
