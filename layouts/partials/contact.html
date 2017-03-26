@@ -30,24 +30,33 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4 text-center">
+                        <ul class="list-inline quicklinks">{{ with .Site.Params.contact.address }}
+                        <i class="fa fa-2x {{ .icon }} wow bounceIn" data-wow-delay=".1s"></i>
+                        <p><a href="{{ .link }}">{{ .text  | markdownify }}</a></p>
+                        {{ end }}
+                        </ul>
+                    </div> 
                       
                     <div class="col-lg-4 text-center">
                         <i class="fa fa-envelope-o fa-2x wow bounceIn" data-wow-delay=".1s"></i>
                         <p><a href="mailto:{{ with .Site.Params.contact.email }}{{ . }}{{ end }}">{{ with .Site.Params.contact.email }}{{ . }}{{ end }}</a></p>
                     </div> 
+                    
 
-                        <div class="col-lg-4 text-center">
+                    <div class="col-lg-4 text-center">
                             <ul class="list-inline social-buttons">{{ range .Site.Params.contact.social }}
                             <li><a href="{{ .link }}"><i class="fa fa-2x {{ .icon }}"></i></a></li>
                             {{ end }}
                             </ul>
                     </div>
-                        <div class="col-lg-4 text-center">
+                    <div class="col-lg-4 text-center">
                             <ul class="list-inline quicklinks"> {{ range .Site.Params.contact.quicklinks }}
                             <li><a href="{{ .link }}">{{ .text  | markdownify }}</a></li>
                            {{ end }}
                            </ul>
-                        </div>
+                    </div>
                         
                         <div class="clearfix"></div>
                         <div class="col-lg-10 text-left">
